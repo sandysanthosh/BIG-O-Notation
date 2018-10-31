@@ -1,0 +1,72 @@
+573105827
+9090
+
+
+->HDFS FILE system of HADOOP"
+
+it expensive
+
+->sqoop: bringing data in Hadoop:
+
+sqopp is a data ingestion tool
+is a toll for transfer data between HDFS & RDBMS like mysql,oracle
+
+ETL tool: extract 
+
+->Apache spark:
+
+open source cluster computing framework
+computation is done in memory
+spark has API in java , scale , python & R
+
+HIVE : Bring SQL like power to hadoop through apache hive:
+
+hive is an abstarct layer on top of hadoop
+it uses sql like called HiveQL
+usesfyl for data processing and ETL
+hive uses map reduce
+
+TABLAEU:
+
+data vizulation tool to create
+graph, charts, reports and dashboard on our existing data
+provide an easy to use,drag and drop interface
+can connect with wide varity of data
+
+let look into the architecrue
+
+how to data flows
+csv data -> mysql -> scoop -> HDFS ->spark -> hive -> Tablaeu
+
+spark:
+read data and give data 
+spark store data with hive
+
+csv to mysql:
+mysql query
+use sqoop
+load data local infile orsder.csv piple line by
+select * from orders
+
+HUE web ui for HADOOP:
+
+scoop:
+bring data mysql to hadoop
+
+sqoop import --connect "jdbc://mysql:ip-172-31-20-247:3306/sqooper" -- table pipeline13 --username sqoopuser -p --target -dir / user/support1161/raghu/ord13- -m 1
+
+
+apache spark:
+
+val df = spark.read.option("header","false").option(
+
+hive:
+
+df.write.format("orc").mode(SaveMode.Append).saveAs
+
+tablaue:
+
+connecting tablaue
+
+link to open->horton work->download->hdp add on 
+
